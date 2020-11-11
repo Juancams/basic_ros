@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="basic_rospy" type="simple_node_pub_obj.py" name="Simple_Node_Pub_Obj" output="screen"/>
+    <node pkg="basic_rospy" type="simple_node_sub_obj.py" name="Simple_Node_Sub_Obj" output="screen"/>
+</launch>

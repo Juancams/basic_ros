@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="basic_roscpp" type="simple_node_pub" name="Simple_Node_Pub" output="screen"/>
+    <node pkg="basic_roscpp" type="simple_node_sub" name="Simple_Node_Sub" output="screen"/>
+</launch>
