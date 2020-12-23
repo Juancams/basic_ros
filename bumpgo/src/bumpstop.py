@@ -26,7 +26,7 @@ class BumpStop():
     def laserCallback(self, msg):
         if (msg.ranges[0] < UMBRAL):
             self.bump = True
-        else 
+        else: 
             self.bump = False
 
     def step(self):
