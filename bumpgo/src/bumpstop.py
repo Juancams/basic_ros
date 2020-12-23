@@ -27,7 +27,7 @@ class BumpStop():
         if (msg.ranges[0] < UMBRAL):
             self.bump = True
         else 
-            self.bumo = False
+            self.bump = False
 
     def step(self):
         if (self.bump):
