@@ -7,8 +7,6 @@ class Publisher():
     def __init__(self):
         self.pub = rospy.Publisher("/cmd_vel", Twist, queue_size=1)
         self.msg = Twist()
-
-    def step(self):
         self.msg.linear.x = 0.3 # Avanzar / Retroceder
         self.msg.linear.y = 0
         self.msg.linear.z = 0
@@ -16,6 +14,7 @@ class Publisher():
         self.msg.angular.y = 0
         self.msg.angular.z = 0  # Girar
 
+    def step(self):
         self.pub.publish(self.msg)
 
 def main():
