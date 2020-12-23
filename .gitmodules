@@ -1,9 +1,0 @@
-
-[submodule "thirdparty/turtlebot3_simulations"]
-	path = thirdparty/turtlebot3_simulations
-	url = https://github.com/ROBOTIS-GIT/turtlebot3_simulations
-	branch = noetic-devel
-[submodule "thirdparty/turtlebot3"]
-	path = thirdparty/turtlebot3
-	url = https://github.com/ROBOTIS-GIT/turtlebot3
-	branch = noetic-devel
