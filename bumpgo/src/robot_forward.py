@@ -3,16 +3,19 @@
 import rospy
 from geometry_msgs.msg import Twist
 
+FORWARD = 0.3
+STOP = 0
+
 class Publisher():
     def __init__(self):
         self.pub = rospy.Publisher("/cmd_vel", Twist, queue_size=1)
         self.msg = Twist()
-        self.msg.linear.x = 0.3 # Avanzar / Retroceder
-        self.msg.linear.y = 0
-        self.msg.linear.z = 0
-        self.msg.angular.x = 0
-        self.msg.angular.y = 0
-        self.msg.angular.z = 0  # Girar
+        self.msg.linear.x = FORWARD # Avanzar / Retroceder
+        self.msg.linear.y = STOP
+        self.msg.linear.z = STOP
+        self.msg.angular.x = STOP
+        self.msg.angular.y = STOP
+        self.msg.angular.z = STOP  # Girar
 
     def step(self):
         self.pub.publish(self.msg)
