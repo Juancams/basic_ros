@@ -23,5 +23,5 @@ jobs:
       - name: build and test
         uses: ros-tooling/action-ros-ci@v0.2
         with:
-          package-name: basic_ros
+          package-name: basic_roscpp
           target-ros1-distro: noetic
