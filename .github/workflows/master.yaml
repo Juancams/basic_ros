@@ -41,5 +41,6 @@ jobs:
           source /opt/ros/$ROS_DISTRO/setup.bash
           mkdir -p ~/catkin_ws/src
           cd ~/catkin_ws
+          git clone --recursive https://github.com/Juancams/basic_ros.git
           catkin_make
           source devel/setup.bash
