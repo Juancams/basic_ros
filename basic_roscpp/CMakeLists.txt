@@ -4,6 +4,7 @@ project(basic_roscpp)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
+  roslint
 )
 
 catkin_package(
