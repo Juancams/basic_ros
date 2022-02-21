@@ -48,6 +48,8 @@ jobs:
           source devel/setup.bash
      - name: lint
        run: |
+          source /opt/ros/$ROS_DISTRO/setup.bash
           cd ~/catkin_ws
+          source devel/setup.bash
           catkin_make roslint_*
         
