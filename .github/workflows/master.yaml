@@ -46,3 +46,8 @@ jobs:
           rosdep install --from-paths src --ignore-src -r -y
           catkin_make
           source devel/setup.bash
+     - name: lint
+       run: |
+          cd ~/catkin_ws
+          catkin_make roslint_*
+        
