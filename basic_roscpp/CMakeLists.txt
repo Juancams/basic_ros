@@ -25,3 +25,9 @@ target_link_libraries(simple_node_pub ${catkin_LIBRARIES})
 target_link_libraries(simple_node_sub ${catkin_LIBRARIES})
 target_link_libraries(simple_node_pub_obj ${catkin_LIBRARIES})
 target_link_libraries(simple_node_sub_obj ${catkin_LIBRARIES})
+
+roslint_cpp(
+ src/bumpgo_node.cpp
+ src/bumpgo_roscpp/bumpgo.cpp
+ include/bumpgo_roscpp/bumpgo.h
+)
