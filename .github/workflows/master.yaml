@@ -21,7 +21,7 @@ jobs:
         with:
           required-ros-distributions: noetic
       - name: build and test
-        uses: ros-tooling/action-ros-ci@v0.2
+        uses: ros-tooling/action-ros-ci@v0.2 ros-tooling/action-ros-lint@master
         with:
           package-name: basic_roscpp basic_rospy
           target-ros1-distro: noetic
